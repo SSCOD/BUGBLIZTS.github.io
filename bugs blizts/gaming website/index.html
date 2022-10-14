@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugs blizts</title>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">    
+    <link rel="shortcut icon" href="assets/images/logo/bugs logo.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
+    
+
+<style>
+  
+     
+  .event_sadib {
+     background: url(./home_background.jfif) center center no-repeat;
+     background-size: cover;
+     position: relative;
+   }
+   .event_sadib::before {
+     content: "";
+     background-color: rgba(0, 0, 0, 0.8);
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+   }
+   .event_sadib .section-title h2 {
+     color: #fff;
+   }
+   .event_sadib .container {
+     position: relative;
+   }
+   @media (min-width: 1024px) {
+     .event_sadib {
+       background-attachment: fixed;
+     }
+   }
+   .event_sadib .event_sadib-carousel {
+     background: rgba(255, 255, 255, 0.08);
+     padding: 30px;
+   }
+   .event_sadib .event-item {
+     color: #fff;
+   }
+   .event_sadib .event-item h3 {
+     font-weight: 600;
+     font-size: 26px;
+     color: #cda45e;
+   }
+   .event_sadib .event-item .price {
+     font-size: 26px;
+     font-family: "Open Sans", sans-serif;
+     font-weight: 700;
+     margin-bottom: 15px;
+   }
+   .event_sadib .event-item .price span {
+     border-bottom: 2px solid #cda45e;
+   }
+   .event_sadib .event-item ul {
+     list-style: none;
+     padding: 0;
+   }
+   .event_sadib .event-item ul li {
+     padding-bottom: 10px;
+   }
+   .event_sadib .event-item ul i {
+     font-size: 20px;
+     padding-right: 4px;
+     color: #cda45e;
+   }
+   .event_sadib .event-item p:last-child {
+     margin-bottom: 0;
+   }
+   .event_sadib .swiper-pagination {
+     margin-top: 30px;
+     position: relative;
+   }
+   .event_sadib .swiper-pagination .swiper-pagination-bullet {
+     width: 12px;
+     height: 12px;
+     background-color: rgba(255, 255, 255, 0.4);
+     opacity: 1;
+   }
+   .event_sadib .swiper-pagination .swiper-pagination-bullet-active {
+     background-color: #cda45e;
+   }
+   
+   
+ 
+         
+ .events {
+   background: url(./background.jpg) center center no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+ .events::before {
+   content: "";
+   background-color: rgba(0, 0, 0, 0.8);
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+ }
+ .events .section-title h2 {
+   color: #fff;
+ }
+ .events .container {
+   position: relative;
+ }
+ @media (min-width: 1024px) {
+   .events {
+     background-attachment: fixed;
+   }
+ }
+ .events .events-carousel {
+   background: rgba(255, 255, 255, 0.08);
+   padding: 30px;
+ }
+ .events .event-item {
+   color: #fff;
+ }
+ .events .event-item h3 {
+   font-weight: 600;
+   font-size: 26px;
+   color: #057236;
+ }
+ .events .event-item .price {
+   font-size: 26px;
+   font-family: "Open Sans", sans-serif;
+   font-weight: 700;
+   margin-bottom: 15px;
+ }
+ .events .event-item .price span {
+   border-bottom: 2px solid ;
+ }
+ .events .event-item ul {
+   list-style: none;
+   padding: 0;
+ }
+ .events .event-item ul li {
+   padding-bottom: 10px;
+ }
+ .events .event-item ul i {
+   font-size: 20px;
+   padding-right: 4px;
+   color: #057236;
+ }
+ .events .event-item p:last-child {
+   margin-bottom: 0;
+ }
+ .events .swiper-pagination {
+   margin-top: 30px;
+   position: relative;
+ }
+ .events .swiper-pagination .swiper-pagination-bullet {
+   width: 12px;
+   height: 12px;
+   background-color: rgba(255, 255, 255, 0.4);
+   opacity: 1;
+ }
+ .events .swiper-pagination .swiper-pagination-bullet-active {
+   background-color: #057236;
+ }
+ 
+ @-webkit-keyframes animate-loading {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ @keyframes animate-loading {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+
+ .popup{
+    background-color: #202046;
+    width: 500px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1000;
+  -webkit-animation: popup 1s ease-in-out 5s forwards;
+          animation: popup 1s ease-in-out 5s forwards;
+}
+
+@-webkit-keyframes popup {
+
+0% {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+100% {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+}
+
+@keyframes popup {
+
+0% {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+100% {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+}
+
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.lets{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+
+
+   
+   
+</style>
+
+
+  
+
+
+</head>
+
+<body>
+
+  
+  <div class="popup">
+    <button id="close">&times;</button>
+    <img src="./single page/images/image_3.png" alt="" style=" padding: 20px; margin-bottom: 20px; background-color: #1A1935; border-radius: 20px;">
+    <h2 style="color: #05CC7C!important;">Avail Exculisive gmaes <br><br> On Our Website</h2>
+   <p style="color: #fff; margin-left: 100px;">
+        Registeration For Online Games.
+    </p>
+    <div class="match-btn">
+      <a href="./login and registration form/register.html" class="btn">
+          Go To Login! <i class="fa-solid fa-arrow-right-long"></i>
+      </a>
+  </div>
+   
+</div>
+  
+    <section class="animation">
+        <h1>Welcome <span id="saad"></span></h1>
+    </section>
+    <!-- scroll up -->
+    <div class="up">
+        <img src="assets/images/logo/scroll up.png" class="imagesss">
+      </div>
+    <!-- scroll end -->
+
+
+
+
+
+    <!--Banner Section Start-->
+    <section class="banner-section">
+        <!--//*-Menu Header Section-*//-->
+        <div class="header-or-subheader">
+            <header class="header-section">
+                <div class="container">
+                    <div class="header-wrapper">
+                        <div class="logo-menu">
+                            <a href="index.html" class="logo" >
+                                <img src="assets/images/logo/bugs logo.png" alt="logo" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="header-bar d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="main-menu">
+                            <li class="active">
+                                <a href="index.html">HOME</a>
+                               
+                            </li>
+                            <li class="Green_color">
+                                <a href="about.html">ABOUT U<span id="doller">$</span></a>
+                              
+                            </li>
+                            <li class="Green_color"><a href="download.html">DOWNLOAD GAME<span id="doller">$</span></a></li>
+                          
+                            <li class="Green_color">
+                                <a href="games.html">GAME<span id="doller">$</span></a>
+                               
+                            </li>
+                            <li class="Green_color"><a href="contact.html">Contact U<span id="doller">$</span></a></li>
+                           <li>
+                            
+                            <div class="user">
+                                <i class="fa-solid fa-user icon_name" data-toggle="popover"  id="user"  onmouseover="see(saad)" onmouseout="out()"><span id="saad"></span></i>
+                                <span id="saqib" ></span>
+                            </div>
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!--//*-Menu Header Section-*//-->
+     
+       
+
+        <section class="home">
+            <div class="media-icons">
+              <a href="https://www.facebook.com/login.php">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/?hl=en">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/i/flow/login">
+            <i class="fab fa-twitter"></i>
+        </a>
+            </div>
+        
+            <div class="swiper bg-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video  autoplay loop muted id="videoBG">
+                        <source src="./single page/video/slider/mylivewallpapers.com-Assassins-Creed-Valhalla.mp4">
+                    </video>
+                  <img src="./single page/video/slider/valaha.PNG" alt="">
+                  <div class="text-contente">
+                    <h1 class="h1_slider_title" > Assassin Creed<span></span></h1>
+                  </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <video  autoplay loop muted id="videoBG">
+                        <source src="./single page/video/slider/forza 7.mp4">
+                    </video>
+                  <img src="./single page/video/slider/forza 7.PNG" alt="">
+                  <div class="text-contente">
+                    <h1 class="h1_slider_title" > Farza 7<span></span></h1>
+                  </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <video  autoplay loop muted id="videoBG">
+                        <source src="./single page/video/slider/Assassins Creed Syndicate Hd Animated Wallpaper.mp4">
+                    </video>
+                  <img src="./single page/video/slider/asc.PNG" alt="">
+                  <div class="text-contente">
+                    <h1 class="h1_slider_title" > Assassin Creed<span></span></h1>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <video  autoplay loop muted id="videoBG">
+                        <source src="./single page/video/slider/Battlefield 2042 Live Wallpaper In 4K.mp4">
+                    </video>
+                  <img src="./single page/video/slider/2042.PNG" alt="">
+                  <div class="text-contente">
+                    <h1 class="h1_slider_title" > Battlefield 2042<span></span></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-slider-thumbs">
+              <div class="swiper-wrapper thumbs-container">
+                <img src="./single page/video/slider/valaha.PNG" class="swiper-slide" alt="">
+                <img src="./single page/video/slider/forza 7.PNG" class="swiper-slide" alt="">
+                <img src="./single page/video/slider/asc.PNG" class="swiper-slide" alt="">
+                <img src="./single page/video/slider/2042.PNG" class="swiper-slide" alt="">
+                
+              </div>
+            </div>
+          </section>
+
+    </section>
+    <!--Banner Section End-->
+
+ 
+<div class="Video_section_container"  style="margin: 20px;">
+    
+<section class="about_video_section" id="about">
+
+ 
+    <div class="row_video">
+
+        <div class="video-container">
+            <video src="single page/video/Mortal Kombat 11 Cinematic Reveal Trailer - The Game Awards 2018_Trim.mp4" loop autoplay muted></video>
+            <h3>Mortal Kombat</h3>
+        </div>
+
+        <div class="content_video">
+            <h3>Why Choose us?</h3>
+            <p>
+              Mortal Kombat 11 is a 2019 fighting game developed by NetherRealm Studios and published by Warner Bros. Interactive Entertainment. Running on a heavily modified version of Unreal Engine 3,[7] 
+              </p>
+            <p>It is the eleventh main installment in the Mortal Kombat series and a sequel to 2015's Mortal Kombat X. Announced at The Game Awards 2018, the game was released in North America and Europe on April 23, 2019, for Microsoft Windows, Nintendo Switch, PlayStation 4, and Xbox One—with</p>
+            <!-- <a href="#" class="btn_video">learn more</a> -->
+            <div class="match-btn">
+              <a href="single page/mortal_combet.html" class="btn">
+                  View Page <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+</section>
+</div>
+
+
+ 
+ <!--Protfolio Section Start-->
+ <section id="event" class="event_sadib">
+    <div class="trending-prot">
+        <!-- <img src="single page/images/games slider/forza 1.jpg" alt="prot-img"> -->
+    </div>
+    <div class="container">
+        <div class="col-lg-6">
+            <div class="trending-prot-head">
+                <div class="section-header">
+                    <span class="subtitle">
+                    
+                    </span>
+                    <h1 class="title text-white" style="color: #05CC7C!important;">
+                        Choose Who Is The Best Games
+                        In World!
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-wrapper owl-carousel owl-theme">
+            <div class="protfolio-items">
+                <span class="new">
+                    New
+                </span>
+                <img src="assets/images/protfolio/protfolio1.png" alt="pot-img">
+                <div class="main-content">
+                    <div class="content">
+                        <div class="cont">
+                            <a href="single page/valhallah.html">
+                                <h6 class="title">
+                                    Assassin’s Creed
+                                </h6>
+                            </a>
+                            <span>Donec sollicitudin malesuada.</span>
+                        </div>
+                        <a href="single page/video/Assassin's Creed Valhalla - Official Trailer.mp4" class=" prot-icon video">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="protfolio-items prot-active">
+                <span class="new">
+                    New
+                </span>
+                <img src="assets/images/protfolio/protfolio2.png" alt="pot-img">
+                <div class="main-content">
+                    <div class="content">
+                        <div class="cont">
+                            <a href="single page/ww2.html">
+                                <h6 class="title">
+                                    Call of Duty
+                                </h6>
+                            </a>
+                            <span>Donec sollicitudin malesuada.</span>
+                        </div>
+                        <a href="single page/video/Official Call of Duty®- WWII - Story Trailer.mp4" class=" prot-icon video">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="protfolio-items">
+                <span class="new">
+                    New
+                </span>
+                <img src="assets/images/protfolio/protfolio3.png" alt="pot-img">
+                <div class="main-content">
+                    <div class="content">
+                        <div class="cont">
+                            <a href="single page/tod_raider.html">
+                                <h6 class="title">
+                                    Tomb Raider
+                                </h6>
+                            </a>
+                            <span>Donec sollicitudin malesuada.</span>
+                        </div>
+                        <a href="single page/video/tomb_raider.mp4" class=" prot-icon video">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="protfolio-items">
+                <span class="new">
+                    New
+                </span>
+                <img src="single page/images/games slider/mafia 5.jpg" alt="pot-img">
+                <div class="main-content">
+                    <div class="content">
+                        <div class="cont">
+                            <a href="single page/mafia.html">
+                                <h6 class="title">
+                                Mafia 
+                                </h6>
+                            </a>
+                            <span>Donec sollicitudin malesuada.</span>
+                        </div>
+                        <a href="single page/video/Mafia- Definitive Edition - Official Story Trailer - Gamescom 2020.mp4" class=" prot-icon video">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Protfolio Section End-->
+
+
+
+
+
+<div>
+   
+    <section class="main">
+        <video src="single page/video/slider/Cyberpunk 2077 live wallpaper PC _Animated_.mp4" autoplay loop muted type="mp4"> </video>
+        <img src="single page/images/back cyber.png" class="mask">
+        <h2 class="Section_h2"> <div class="match-btn">
+            <a href="single page/cyber_punk.html" class="btn">
+                View Page <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </div></h2>
+        
+    </section>
+   
+</div>
+
+
+
+
+
+<section class="mass">
+  <div class="image-slider">
+      <div class="image-slider-track">
+          <div class="slide">
+              <img src="single page/images/backgroud image/1.jpg">
+          </div>
+          <div class="slide">
+              <img src="single page/images/backgroud image/2.jpg">
+          </div>
+          <div class="slide">
+              <img src="single page/images/backgroud image/3.jpg">
+          </div>
+
+          <div class="slide">
+              <img src="single page/images/backgroud image/4.jpg">
+          </div>
+          <div class="slide">
+              <img src="single page/images/backgroud image/5.jpg">
+          </div>
+          <div class="slide">
+              <img src="single page/images/backgroud image/6.jpg">
+          </div>
+
+          <div class="slide">
+              <img src="single page/images/backgroud image/7.jpg">
+          </div>
+          <div class="slide">
+              <img src="single page/images/backgroud image/8.jpg">
+          </div>
+          <div class="slide">
+              <img src="single page/images/backgroud image/9.jpg">
+          </div>
+
+          <div class="slide">
+              <img src="single page/images/backgroud image/10.png">
+          </div>
+          <div class="slide">
+              <img src="single page/images/backgroud image/11.jpg">
+          </div>
+          <div class="slide">
+              <img src="single page/images/backgroud image/12.png">
+          </div>
+
+          
+      </div>
+  </div>
+</section>
+
+
+<div class="flex_slider_online">
+   
+        <!-- ======= Events Section ======= -->
+        <section id="events" class="events">
+            <div class="container_background" data-aos="fade-up">
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+               <center> <h1 style="color: #00AC4D; margin-top: 20px; font-size: 90px;">Top Series</h1></center>
+                             
+                <div class="swiper-wrapper" style="margin-top: 50px;">
+      
+                  <div class="swiper-slide">
+                    <div class="row event-item">
+                      <div class="col-lg-6">
+                        <center><img src="single page/images/slider/assassinscreed.png " class="img-fluid" style="width: 90%; margin-top: 40px; margin-left: 20px;" alt=""></center>
+                      </div>
+                      <div class="col-lg-6 pt-4 pt-lg-0 content" style="margin-top: 40px;">
+                        <h3>Assassins Top Series</h3>
+                       
+                        <p class="fst-italic">
+                          Assassins ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore
+                          magna aliqua.
+                        </p>
+                        <ul>
+                          <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                          <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                          <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        </ul>
+                        <p>
+                          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <br> in reprehenderit in voluptate
+                          velit esse cillum dolore eu fugiat nulla pariatur
+                        </p>
+
+                        <div class="match-btn">
+                          <a href="slider sreies/assassins.html" class="btn">
+                            View Series <i class="fa-solid fa-arrow-right-long"></i>
+                          </a>
+                      </div>
+
+
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+      
+                  <div class="swiper-slide">
+                  
+                    <div class="row event-item">
+                      <div class="col-lg-6">
+                        <center><img src="single page/images/slider/call.jpg" class="img-fluid" style="width: 90%; margin-top: 40px; margin-left: 20px;" alt=""></center>
+                      </div>
+                      <div class="col-lg-6 pt-4 pt-lg-0 content" style="margin-top: 40px;">
+                        <h3>Call Of Duty Top Series</h3>
+                        
+                        <p class="fst-italic">
+                          Call of Duty ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore
+                          magna aliqua.
+                        </p>
+                        <ul>
+                          <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                          <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                          <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        </ul>
+                        <p>
+                          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <br> in reprehenderit in voluptate
+                          velit esse cillum dolore eu fugiat nulla pariatur
+                        </p>
+
+                        <div class="match-btn">
+                          <a href="slider sreies/call_of_duty.html" class="btn">
+                            View Series<i class="fa-solid fa-arrow-right-long"></i>
+                          </a>
+                      </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+      
+                  <div class="swiper-slide">
+                    <div class="row event-item">
+                      <div class="col-lg-6">
+                        <center><img src="single page/images/slider/nkt.jpg " class="img-fluid" style="width: 90%; margin-top: 40px; margin-left: 20px;" alt=""></center>
+                      </div>
+                      <div class="col-lg-6 pt-4 pt-lg-0 content" style="margin-top: 40px;">
+                        <h3>Need for Speed Top Series</h3>
+                        
+                        <p class="fst-italic">
+                          Need for Speed ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore
+                          magna aliqua.
+                        </p>
+                        <ul>
+                          <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                          <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                          <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        </ul>
+                        <p>
+                          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <br> in reprehenderit in voluptate
+                          velit esse cillum dolore eu fugiat nulla pariatur
+                        </p>
+
+                        <div class="match-btn">
+                          <a href="slider sreies/needForSpeed.html" class="btn">
+                              View Series <i class="fa-solid fa-arrow-right-long"></i>
+                          </a>
+                      </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+      
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+      
+            </div>
+          </section><!-- End Events Section -->
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Match Section Start-->
+<section class="match-section blog-section pt-120 pb-120">
+    <div class="container">
+        <div class="col-lg-6">
+            <div class="match-prot-head">
+                <div class="section-header">
+                    <span class="subtitle">
+        
+                    </span>
+                    <h1 class="title text-white">
+                        LATEST GAMES
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="blog-wrapper owl-carousel owl-theme">
+            <div class="match-items">
+                <div class="thumb">
+                    <img src="single page/images/horizon.png" alt="pot-img">
+                </div>
+                <div class="content">
+                    <a href="single page/horizon.html">
+                        <h2 class="title">
+                           HORIZON FORBIDDEN
+                        </h2>
+                    </a>
+                    <div class="soc-admin">
+                        <a href="single page/horizon.html">
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            By Admin
+                        </a>
+                        <a href="single page/horizon.html">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            Oct 25, 2022
+                        </a>
+                    </div>
+                    <div class="match-btn">
+                        <a href="single page/horizon.html" class="btn">
+                            View Page <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="match-items">
+                <div class="thumb">
+                    <img src="single page/images/forza 7.png" alt="pot-img">
+                </div>
+                <div class="content">
+                    <a href="single page/forza.html">
+                        <h2 class="title">
+                            FORZA 7
+                        </h2>
+                    </a>
+                    <div class="soc-admin">
+                        <a href="single page/forza.html">
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            By Admin
+                        </a>
+                        <a href="single page/forza.html">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            Oct 25, 2022
+                        </a>
+                    </div>
+                    <div class="match-btn">
+                        <a href="single page/forza.html" class="btn">
+                            View Page <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="match-items">
+                <div class="thumb">
+                    <img src="single page/images/mafia.png" alt="pot-img">
+                </div>
+                <div class="content">
+                    <a href="single page/mafia.html">
+                        <h2 class="title">
+                           MAFIA DEFINITIVE
+                        </h2>
+                    </a>
+                    <div class="soc-admin">
+                        <a href="single page/mafia.html">
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            By Admin
+                        </a>
+                        <a href="single page/mafia.html">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            Oct 25, 2022
+                        </a>
+                    </div>
+                    <div class="match-btn">
+                        <a href="single page/mafia.html" class="btn">
+                            View Page <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="match-items">
+                <div class="thumb">
+                    <img src="single page/images/farcray.png" alt="pot-img">
+                </div>
+                <div class="content">
+                    <a href="single page/farcray.html">
+                        <h2 class="title">
+                          FARCRY 6
+                        </h2>
+                    </a>
+                    <div class="soc-admin">
+                        <a href="single page/farcray.html">
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            By Admin
+                        </a>
+                        <a href="single page/farcray.html">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            Oct 25, 2022
+                        </a>
+                    </div>
+                    <div class="match-btn">
+                        <a href="single page/farcray.html" class="btn">
+                            View Page <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="match-items">
+                <div class="thumb">
+                    <img src="single page/images/battlefield.png" alt="pot-img">
+                </div>
+                <div class="content">
+                    <a href="single page/battlefield.html">
+                        <h2 class="title">
+                            BATTLEFIELD 2042
+                        </h2>
+                    </a>
+                    <div class="soc-admin">
+                        <a href="single page/battlefield.html">
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            By Admin
+                        </a>
+                        <a href="single page/battlefield.html">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            Oct 25, 20222
+                        </a>
+                    </div>
+                    <div class="match-btn">
+                        <a href="single page/battlefield.html" class="btn">
+                            View Page <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Match Section End-->
+
+<div class="logo_slider" style="background: #202046;  margin-bottom: 10px;">
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients">
+        <div class="container_logo_slider" data-aos="zoom-in">
+  
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide"><img src="clients/assassins.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="clients/callof.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="clients/cyber pun.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="clients/farcry.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="clients/forzaa.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="clients/horizonn.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="clients/tombb.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="clients/mafiaa.png" class="img-fluid" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section><!-- End Clients Section -->
+ 
+</div>
+
+
+  
+
+    <!--Contct-solution Section Start-->
+    <section class="solution-section">
+        <div class="container">
+            <div class="solition-wrap">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="title">
+                                Our news Letter
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="input-ext">
+                                <input type="email" placeholder="Enter Your Email" required>
+                                <div class="icon">
+                                    <i class="fas fa-message"></i>
+                                </div>
+                            </div>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contct-solution Section End-->
+
+   <!--Footer Section Start-->
+   <section class="footer-section footer-section-two">
+    <div class="container">
+        <div class="footer-middle">
+            <div class="f-logo">
+                <img src="assets/images/logo/bugs logo.png" alt="menu-logo" style="width: 50%;">
+            </div>
+            <ul class="footer-middle-tag">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        about u<span id="doller">$</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="download.html">
+                        DOWNLOAD GAME<span id="doller">$</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="games.html">
+                       Game<span id="doller">$</span>
+                    </a>
+                </li>
+             
+                <li>
+                    <a href="contact.html">
+                        Contact U<span id="doller">$</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Copyright &copy; Bug<span id="doller">$</span> Blizt<span id="doller">$</span> | Designed by <a href="#0"><span id="doller">$</span>AQIB KHAN & <span id="doller">$</span>YED <span id="doller">$</span>AAD </a>
+            </p>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/login.php">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/i/flow/login">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/login/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/?hl=en">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--Footer Section End-->
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-custom.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/owlcustom.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    
+   <script>
+
+
+
+    
+    var $play = $('.play'),
+    $detail  = $('.detail'),
+    $movie = $('.movie', $detail),
+    $close = $('.close');
+
+$('.movies .movie').click(function(){
+  $movie.html($(this).html());
+  $play.appendTo($movie);
+
+  $poster = $('.poster', this).addClass('active');
+
+  $('.poster', $detail).css({
+    top: $poster.position().top,
+    left: $poster.position().left,
+    width: $poster.width(),
+    height: $poster.height()
+  }).data({
+    top: $poster.position().top,
+    left: $poster.position().left,
+    width: $poster.width(),
+    height: $poster.height()
+  })
+
+  $detail.show();
+
+  $('.poster', $detail).delay(10).queue(function(next) {
+    $detail.addClass('ready');
+
+    next();
+  }).delay(100).queue(function(next){
+    $(this).css({
+      top: '-10%',
+      left: '-6%',
+      width: 266,
+      height: 400
+    });
+    next();
+  })
+})
+
+function close(){
+  console.log('asd');
+  $p = $('.detail .poster');
+  console.log($p)
+  $p.css({
+    top: $p.data('top'),
+    left: $p.data('left'),
+    width: $p.data('width'),
+    height: $p.data('height'),
+  })
+  $detail.removeClass('ready').delay(500).queue(function(next){
+    $(this).hide();
+    $poster.removeClass('active');
+    next();
+  });
+}
+
+$close.click(close);
+$('body').click(function(e){
+  $p = $(e.target).parents();
+  if ($p.is('.app_popular')){
+    return false;
+  } else {
+    close();
+  }
+})
+
+setTimeout(function(){
+  $('.movie:eq(0)').click();
+}, 300);
+setTimeout(function(){
+  close();
+},1700);
+        
+   </script>
+
+
+<script>
+    $(function() {
+      var Page = (function() {
+        var $navArrows = $( '#nav-arrows' ).hide(),
+            $shadow = $( '#shadow' ).hide(),
+            slicebox = $( '#DBZ-slider' ).slicebox( {
+              onReady : function() {
+                $navArrows.show();
+                $shadow.show();
+              },
+              orientation : 'r',
+              cuboidsRandom : true,
+              disperseFactor : 30
+            } ),
+            init = function() {
+              
+              initEvents();
+            },
+            initEvents = function() {
+              $navArrows.children( ':first' ).on( 'click', function() {
+                
+                slicebox.next();
+                return false;
+              } );
+              $navArrows.children( ':last' ).on( 'click', function() {
+                
+                slicebox.previous();
+                return false;
+              } );
+            };
+        return { init : init };
+      })();
+      Page.init();
+    });
+
+
+
+    (function() {
+  "use strict";
+
+  
+  /**
+   * Clients Slider
+   */
+  new Swiper('.clients-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 60
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 120
+      }
+    }
+  });
+
+  
+
+})();
+
+  /**
+   * Events slider
+   */
+   new Swiper('.events-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+
+
+
+
+
+
+    </script>
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

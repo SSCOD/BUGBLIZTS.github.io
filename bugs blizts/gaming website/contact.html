@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from nextgenerationdev.com/demos/html/raxg/raxg/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Sep 2022 18:33:33 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugs Blitzs</title>
+   
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">    
+    <link rel="shortcut icon" href="assets/images/logo/bugs logo.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+ 
+        .showcase
+        {
+            position: relative;
+            right: 0%;
+            width: 100%;
+            min-height: 100vh;
+        }
+        .showcase video
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+        .overlay
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #2534be50;
+            mix-blend-mode: overlay;
+        }
+        
+        .section3
+        {
+        display: flex !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        min-height: 100vh !important;
+        
+        }
+        .container_contect
+        {
+        width: 50% !important;
+        padding: 20px !important;
+        }
+        .container_contect h2
+        {
+        width: 100%;
+        z-index: 10;
+        position: relative;
+        color: #00AC4D;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 10px;
+        }
+        .container_contect .row100
+        {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+        }
+        .container_contect .row100 .col
+        {
+        position: relative;
+        width: 100%;
+        padding: 0 10px;
+        margin: 30px 0 10px;
+        transition: 0.5s;
+        }
+        .container_contect .row100 .inputBox
+        {
+            color: #fff;
+        position: relative;
+        width: 100%;
+        height: 40px;
+        
+        
+        }
+        
+        .container_contect .row100 .inputBox input,
+        .container_contect .row100 .inputBox.textarea textarea
+        {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding: 0 10px;
+        z-index: 1;
+        color: rgb(255, 255, 255);
+        }
+        
+        .container_contect .row100 .inputBox .text
+        {
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 40px;
+        font-size: 18px;
+        padding: 0 10px;
+        display: block;
+        transition: 0.5s;
+        pointer-events: none;
+        }
+        .container_contect .row100 .inputBox input:focus + .text,
+        .container_contect .row100 .inputBox input:valid + .text
+        {
+        top: -35px;
+        left: -10px;
+        }
+        .container_contect .row100 .inputBox .line
+        {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #49be5d52, #088137);
+        
+        transition: 0.5s;
+        border-radius: 2px;
+        pointer-events: none;
+        }
+        .container_contect .row100 .inputBox input:focus ~ .line,
+        .container_contect .row100 .inputBox input:valid ~ .line
+        {
+        height: 100%;
+        }
+        .container_contect .row100 .inputBox.textarea
+        {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        padding: 10px 0;
+        }
+        .container_contect .row100 .inputBox.textarea textarea
+        {
+        height: 100%;
+        resize: none;
+        }
+        .container_contect .row100 .inputBox textarea:focus + .text,
+        .container_contect .row100 .inputBox textarea:valid + .text
+        {
+        top: -35px;
+        left: -10px;
+        }
+        .container_contect .row100 .inputBox textarea:focus ~ .line,
+        .container_contect .row100 .inputBox textarea:valid ~ .line
+        {
+        height: 100%;
+        }
+        input[type="submit"]
+        {
+        border: none;
+        padding: 7px 35px;
+        cursor: pointer;
+        outline: none;
+        background: linear-gradient(to right, #49be5d52, #088137);
+        
+        /* #304352, #d7d2cc */
+        
+        color:#fff  ;
+        font-size: 18px;
+        border-radius: 2px;
+        
+        }
+        
+            </style>
+</head>
+<body>
+
+    <section class="animation">
+        <h1>Welcome <span id="saad"></span></h1>
+    </section>
+
+    <!--Banner Section Start-->
+    <section class="banner-section">
+        <!--//*-Menu Header Section-*//-->
+        <div class="header-or-subheader">
+            <header class="header-section">
+                <div class="container">
+                    <div class="header-wrapper">
+                        <div class="logo-menu">
+                            <a href="index.html" class="logo" >
+                                <img src="assets/images/logo/bugs logo.png" alt="logo" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="header-bar d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="main-menu">
+                            <li class="active">
+                                <a href="index.html">HOME</a>
+                               
+                            </li>
+                            <li class="Green_color">
+                                <a href="about.html">ABOUT U<span id="doller">$</span></a>
+                              
+                            </li>
+                            <li class="Green_color"><a href="download.html">DOWNLOAD GAME<span id="doller">$</span></a></li>
+                          
+                            <li class="Green_color">
+                                <a href="games.html">GAME<span id="doller">$</span></a>
+                               
+                            </li>
+                            <li class="Green_color"><a href="contact.html">Contact U<span id="doller">$</span></a></li>
+                           <li>
+                            
+                            <div class="user">
+                                <i class="fa-solid fa-user icon_name" data-toggle="popover"  id="user"  onmouseover="see(saad)" onmouseout="out()"><span id="saad"></span></i>
+                                <span id="saqib" ></span>
+                            </div>
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!--//*-Menu Header Section-*//-->
+     
+       
+
+        <section class="home">
+            <div class="media-icons">
+                <a href="https://www.facebook.com/login.php">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/?hl=en">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com/i/flow/login">
+                <i class="fab fa-twitter"></i>
+            </a>
+            </div>
+        
+            <div class="swiper bg-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video  autoplay loop muted id="videoBG">
+                        <source src="./single page/video/slider/dragon ballz.mp4">
+                    </video>
+                  <img src="./single page/video/slider/dragon.PNG" alt="">
+                  <div class="text-contente">
+                    <h1 class="h1_slider_title" > Contact Us<span></span></h1>
+                  </div>
+                 
+                </div>
+               
+              </div>
+            </div>
+            
+            
+              </div>
+            </div>
+          </section>
+
+
+    </section>
+    <!--Banner Section End-->
+
+
+   
+       <!-- scroll up -->
+       <div class="up">
+        <img src="assets/images/logo/scroll up.png" class="imagesss">
+      </div>
+    <!-- scroll end -->
+
+
+
+
+
+    <section class="showcase">
+	
+
+
+        <video src="single page/video/Mortal Kombat 11 Cinematic Reveal Trailer - The Game Awards 2018_Trim.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+
+      
+        <div class="section3" id="contect">
+            <div class="container_contect">
+                <h2>Contact Us</h2>
+              <form>  <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required>
+                            <span class="text">First Name</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required>
+                            <span class="text">Last Name</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required>
+                            <span class="text">email</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required>
+                            <span class="text">mobile</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox textarea">
+                           <textarea name=""required ></textarea>
+                            <span class="text">Type your message Here...</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row100">
+                        <div class="col">
+                            <input type="submit" value="Send">
+                    </div>
+                </div></form>
+            </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!--Contct-solution Section Start-->
+    <section class="solution-section">
+        <div class="container">
+            <div class="solition-wrap">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="title">
+                                Our news Letter
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="input-ext">
+                                <input type="email" placeholder="Enter Your Email" required>
+                                <div class="icon">
+                                    <i class="fas fa-message"></i>
+                                </div>
+                            </div>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contct-solution Section End-->
+
+
+    <!--Footer Section Start-->
+    <section class="footer-section footer-section-two">
+        <div class="container">
+            <div class="footer-middle">
+                <div class="f-logo">
+                    <img src="assets/images/logo/bugs logo.png" alt="menu-logo" style="width: 50%;">
+                </div>
+                <ul class="footer-middle-tag">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            about u<span id="doller">$</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="download.html">
+                            DOWNLOAD GAME<span id="doller">$</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="games.html">
+                           Game<span id="doller">$</span>
+                        </a>
+                    </li>
+                 
+                    <li>
+                        <a href="contact.html">
+                            Contact U<span id="doller">$</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    Copyright &copy; Bug<span id="doller">$</span> Blizt<span id="doller">$</span> | Designed by <a href="#0"><span id="doller">$</span>AQIB KHAN & <span id="doller">$</span>YED <span id="doller">$</span>AAD </a>
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/login.php">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/i/flow/login">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/login/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/?hl=en">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Footer Section End-->
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-custom.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/owlcustom.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/back.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    margin: 0;
+    padding: 20px;
+    background-color:#1A1935;
+    font-family: arial;
+  height: 700px
+}
+
+.box_online
+{
+    text-align: center;
+    position: relative;
+}
+.box_online p{
+    position: absolute;
+    top:5px;
+    left:38%;
+    font-weight: 700;
+    text-transform: uppercase;
+  color:#ffffff;
+  width: 300px
+}
+
+.box_online p span{
+  display: block;
+  font-size:300%
+}
+
+
+.box{
+    text-align: center;
+    position: relative;
+}
+
+.box div{
+    width: 250px;
+    height: 80px;
+    line-height: 80px;
+    color:#ffc900;
+    background-color: #00AC4D;
+    font-size: 280%;
+    position: absolute;
+    top:490px;
+    left:40%;
+    text-transform: capitalize;
+    animation: moving 8s linear infinite;
+  -webkit-animation: moving 8s linear infinite;
+  -moz-animation: moving 8s linear infinite;
+  -o-animation: moving 8s linear infinite;
+  
+    transform-origin: 50% -400%;
+  -webkittransform-origin: 50% -400%;
+  -moz-transform-origin: 50% -400%;
+  -o-transform-origin: 50% -400%;
+}
+
+.box div:before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color:#00AC4D;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left:45%;
+    top:-350px;
+}
+
+.box div:after{
+    content: "";
+    width: 3px;
+    height: 335px;
+    background-color: #00AC4D;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -330px;
+}
+
+.box p{
+    position: absolute;
+    top:560px;
+    left:38%;
+    font-weight: 700;
+    text-transform: uppercase;
+  color:#00AC4D;
+  width: 300px
+}
+.box a
+{
+    color: #1A1935;
+    text-decoration: none;
+}
+.box p span{
+  display: block;
+  font-size:300%
+}
+
+@keyframes moving{
+    0%,100%{
+        transform: rotate(0)
+    }
+    25%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(-3deg)
+    }
+}
+
+@-webkit-keyframes moving{
+    0%,100%{
+        transform: rotate(0)
+    }
+    25%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(-3deg)
+    }
+}
+
+@-moz-keyframes moving{
+    0%,100%{
+        transform: rotate(0)
+    }
+    25%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(-3deg)
+    }
+}
+
+@-o-keyframes moving{
+    0%,100%{
+        transform: rotate(0)
+    }
+    25%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(-3deg)
+    }
+}
+    </style>
+</head>
+<body>
+   
+      
+      <div class="box">
+                  <div>
+                    <a href="../index.html"> Back Home</a>
+                  </div>
+                  <p><span>error 404 !</span> sorry page isn't found for one of the reformes </p>
+              </div>
+              <div class="box_online">
+              <p><span>Online Page</span> </p>
+              </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug$ Blizt$</title>
+    <link rel="stylesheet" href="Welcome.css">
+    <link rel="stylesheet" href="gaming website/assets/css/main.css">
+</head>
+<body>
+    <div class="welcome">
+        <h1 style="color: #fff;">Hi</h1>
+    </div>
+    <div class="welcome"><h1 class="lets"  style="color: #fff;">let's gaming</h1></div>
+    <form class="input" action="./gaming website/index.html">
+        <h1 style="margin-top: 60px;" class="enter">Enter your name</h1>
+       <div class="search-data">
+        <input type="text" required id="myInput">
+           
+            <label>Type to name..</label>
+            <div class="line"></div>
+        </div>
+        <!-- <input type="submit" onclick="send()">
+        <input type="submit" onclick="send()"> -->
+        <div class="match-btn" style="margin-top: 30px;">
+            <a href="gaming website/index.html" class="btn"  onclick="send()">
+                Submit <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </div>
+    </form>
+    
+
+    <script>
+        function send(){
+    let send = document.getElementById('myInput').value
+    localStorage.setItem("saqib",send)
+}
+    </script>
+</body>
+
+</html>
